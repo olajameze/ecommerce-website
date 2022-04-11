@@ -66,5 +66,14 @@ nav {
   }
 
   .slider {
-    background: url("https://patternico.com/#ptocq2uNYb0gbVfD");
+    background: url("https://c4.wallpaperflare.com/wallpaper/410/77/199/5bd0bdc12d414-wallpaper-preview.jpg");
+    /*clip-path: polygon(31% 0, 100% 0, 100% 60%, 100% 100%, 25% 100%, 0% 60%, 0 0);*/
+  }
+
+  .sliderWrapper {
+    display: flex;
+    width: 500vw;
+  }
+  .sliderItem {
+    width: 100vw;
   }
