@@ -67,13 +67,67 @@ nav {
 
   .slider {
     background: url("https://c4.wallpaperflare.com/wallpaper/410/77/199/5bd0bdc12d414-wallpaper-preview.jpg");
-    /*clip-path: polygon(31% 0, 100% 0, 100% 60%, 100% 100%, 25% 100%, 0% 60%, 0 0);*/
+    clip-path: polygon(31% 0, 100% 0, 100% 60%, 100% 100%, 25% 100%, 0% 60%, 0 0);
   }
 
   .sliderWrapper {
     display: flex;
     width: 500vw;
   }
+
   .sliderItem {
     width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
   }
+
+  .sliderbg {
+    width: 750px;
+    height: 750px;
+    border-radius: 50%;
+    position: absolute;
+  }
+
+  .sliderImage {
+    z-index: 1;
+  }
+
+  .sliderTitle {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    font-size: 50px;
+    font-weight: 900;
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+  }
+
+  .sliderPrice {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    border: 1px solid gray;
+    font-size: 40px;
+    font-weight: 250;
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+  }
+
+  .buyButton {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    border: 1px solid gray;
+    font-size: 40px;
+    font-weight: 250;
+    color: #fff;
+    background-color: #16121C;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  .buyButton:hover
