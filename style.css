@@ -67,7 +67,7 @@ nav {
 
   .slider {
     background: url("https://c4.wallpaperflare.com/wallpaper/410/77/199/5bd0bdc12d414-wallpaper-preview.jpg");
-    clip-path: polygon(31% 0, 100% 0, 100% 60%, 100% 100%, 25% 100%, 0% 60%, 0 0);
+    /*clip-path: polygon(31% 0, 100% 0, 100% 60%, 100% 100%, 25% 100%, 0% 60%, 0 0);*/
   }
 
   .sliderWrapper {
@@ -133,4 +133,33 @@ nav {
   .buyButton:hover {
     background-color: #927E80;
     color:#16121C;
+  }
+
+  .sliderItem:nth-child(1).sliderBg {
+    background-color: #40353E;
+  }
+
+  .sliderItem:nth-child(2).sliderBg {
+    background-color: rgb(70, 112, 125);
+  }
+
+  .sliderItem:nth-child(3).sliderBg {
+    background-color: #4035;
+  }
+
+  .sliderItem:nth-child(4).sliderBg {
+    background-color: rgb(71, 66, 125);
+  }
+
+  .sliderItem:nth-child(1) .sliderPrice {
+    color: #369e62;
+  }
+  .sliderItem:nth-child(2) .sliderPrice {
+    color: rgb(23, 14, 33);
+  }
+  .sliderItem:nth-child(3) .sliderPrice {
+    color: teal;
+  }
+  .sliderItem:nth-child(4) .sliderPrice {
+    color: cornflowerblue;
   }
