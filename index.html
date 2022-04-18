@@ -97,8 +97,31 @@
         <p class="productDescription">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
             Soluta possimus ut hic reiciendis dolores excepturi quas 
             repudiandae dolorem! Est praesentium incidunt nobis deleniti debitis.</p>
+
         <button class="productButton">Buy Now!</button>
     </div>
+<div class="payment">
+     <h1 class="payTitle">Personal Info</h1>
+     <label>Name and Last name</label>
+     <input type="text" placeholder="Liam Bender" class="payInput">
+     <label>Phone Num</label>
+     <input type="text" placeholder="+44 7721345671" class="payInput">
+     <label>Address</label>
+     <input type="text" placeholder="33 Street Adress Lane" class="payInput">
+     <h1 class="payTitle">Card Info</h1>
+     <div class="cardIcons">
+         <img src="./img/visa.png" width="70" alt="" class="cardIcon">
+         <img src="./img/master.png" alt="" width="70" class="cardIcon">
+     </div>
+     <input type="password" class="payInput" placeholder="Card Number">
+     <div class="cardInfo">
+         <input type="text" placeholder="mm" class="payInput sm">
+         <input type="text" placeholder="yyyy" class="payInput sm">
+         <input type="text" placeholder="CVV" class="payInput sm">
+     </div>
+     <button class="payButton">CheckOut!</button>
+     <span class="close">X</span>
+</div>
 </div>
 
 <script src="./app.js"></script>
