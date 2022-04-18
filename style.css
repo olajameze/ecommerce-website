@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Roboto Mono', monospace;
     padding: 0;
@@ -130,6 +134,7 @@ nav {
     top: 50%;
     right: 10%;
     border: 1px solid gray;
+    border-radius: 12px;
     font-size: 40px;
     font-weight: 250;
     color: #fff;
@@ -152,7 +157,7 @@ nav {
   }
 
   .sliderItem:nth-child(3).sliderBg {
-    background-color: #4035;
+    background-color: rgba(177, 156, 187, 0.333);
   }
 
   .sliderItem:nth-child(4).sliderBg {
@@ -163,7 +168,7 @@ nav {
     color: #369e62;
   }
   .sliderItem:nth-child(2) .sliderPrice {
-    color: rgb(23, 14, 33);
+    color: rgb(127, 112, 144);
   }
   .sliderItem:nth-child(3) .sliderPrice {
     color: teal;
@@ -231,4 +236,21 @@ nav {
 
   .productImg {
     width: 40%;
+  }
+
+  .productButton {
+    float: right;
+    border: 2px solid gray; 
+    border-radius: 12px;
+    font-size: 40px;
+    font-weight: 250;
+    color: #fff;
+    background-color: #1c1926;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  .productButton:hover {
+    background-color: #927E80;
+    color:#473b58;
   }
