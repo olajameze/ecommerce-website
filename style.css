@@ -59,20 +59,28 @@ nav {
     color: #16121C;
   }
 
+  .menuItem:hover {
+    color: #896092;
+    border: #16121C;
+  }
+
   .menuItem {
     margin-right: 50px;
     cursor: pointer;
     font-weight: 400;
+    border-bottom: 3px solid rgb(63, 44, 44);
   }
 
   .slider {
     background: url("https://c4.wallpaperflare.com/wallpaper/410/77/199/5bd0bdc12d414-wallpaper-preview.jpg");
-    /*clip-path: polygon(31% 0, 100% 0, 100% 60%, 100% 100%, 25% 100%, 0% 60%, 0 0);*/
+    clip-path: polygon(31% 0, 100% 0, 100% 60%, 100% 100%, 25% 100%, 0% 60%, 0 0);
+    overflow: hidden;
   }
 
   .sliderWrapper {
     display: flex;
     width: 500vw;
+    transition: all 1s ease-in-out;
   }
 
   .sliderItem {
@@ -162,4 +170,65 @@ nav {
   }
   .sliderItem:nth-child(4) .sliderPrice {
     color: cornflowerblue;
+  }
+
+  .feature {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .featureTitle {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 20px;
+  }
+
+  .features {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+  }
+
+  .featureIcon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .featureDescrition {
+    width: 50px;
+    height: 100px;
+    color:#927E80;
+  }
+
+  .product {
+    height: 100vh;
+    background-color: aliceblue;
+    position: relative;
+    clip-path: polygon(75% 0%, 100% 50%, 94% 93%, 0% 100%, 0 51%, 0% 0%);
+  }
+
+.productDetails {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  width: 40%;
+  padding: 50px;
+}
+
+.productDescription {
+  font-size: 25px;
+  color: #927E80;
+}
+
+.productTitle {
+  font-size: 55px;
+  font-weight: 900;
+  
+}
+
+  .productImg {
+    width: 40%;
   }
