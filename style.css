@@ -61,11 +61,13 @@ nav {
     align-items: center;
     justify-content: center;
     color: #16121C;
+    transition: 0.5s;
   }
 
   .menuItem:hover {
     color: #896092;
     border: #16121C;
+    transform: translateY(-10px);
   }
 
   .menuItem {
@@ -386,5 +388,87 @@ label {
   .soButton {
     padding: 15px;
     font-weight: 600;
+    color: #fff;
+    text-align: center;
+    transition: all 0.5s;
+    background: rgb(167, 197, 208);
     cursor: pointer;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+    border-radius: 25px;
+    border: 2px solid #90cef5;
+  }
+
+  .soButton{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  .soButton:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;  
+    top: 14px;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+  .soButton:hover {
+    background-color: #8ab4df;
+    color:#c9ddf3;
+  }
+
+  .soButton:hover:after {
+    opacity: 1;
+    right: 10px;
+  }
+
+  footer {
+    position: relative;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: rgba(133, 203, 230, 0.763); 
+    min-height: 100px;
+    flex-direction: column;
+  }
+  footer .social_icon, footer .menu {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+  }
+
+  footer .social_icon li, footer .menu li {
+    list-style: none;
+  }
+
+  footer .social_icon li a {
+    display: inline-block;
+    font-size: 2em;
+    color: #fff;
+    margin: 0 10px;
+    transition: 0.5s;
+  }
+
+  footer .social_icon li a:hover {
+    transform: translateY(-10px);
+  }
+
+  footer .menu li a {
+    display: inline-block;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+    opacity: 0.75;
+  }
+
+  footer .menu li a:hover {
+    opacity: 1;
   }
