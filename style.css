@@ -1,17 +1,23 @@
 html {
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 
 body {
     font-family: 'Roboto Mono', monospace;
-    padding: 0;
-    margin: 0;
+    margin: 0 auto;
+    max-width: 100%;
+    display: flex;
+    flex-flow: column wrap;
 }
 
 nav {
     background-color: #D6D0F5;
     color: #fff;
     padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 100%;
 }
 
 .navTop {
@@ -79,12 +85,17 @@ nav {
 
   .slider {
     background: url("https://c4.wallpaperflare.com/wallpaper/410/77/199/5bd0bdc12d414-wallpaper-preview.jpg");
-    clip-path: polygon(31% 0, 100% 0, 100% 60%, 100% 100%, 25% 100%, 0% 60%, 0 0);
+    background-size: 100% 100%;
+    /* clip-path: polygon(31% 0, 100% 0, 100% 60%, 100% 100%, 25% 100%, 0% 60%, 0 0); */
     overflow: hidden;
+    max-width: 100%;
+    display: flex;
+    flex-flow: column wrap;
   }
 
   .sliderWrapper {
     display: flex;
+    flex-flow: row wrap;
     width: 500vw;
     transition: all 1s ease-in-out;
   }
@@ -92,20 +103,21 @@ nav {
   .sliderItem {
     width: 100vw;
     display: flex;
+    flex-flow: column wrap;
     align-items: center;
     justify-content: center;
     position: relative;
   }
 
   .sliderbg {
-    width: 750px;
+    max-width: 100%;
     height: 750px;
     border-radius: 50%;
     position: absolute;
   }
 
   .sliderImage {
-    z-index: 1;
+    /* z-index: 1; */
   }
 
   .sliderTitle {
@@ -181,9 +193,10 @@ nav {
 
   .feature {
     display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
     text-align: center;
-    align-items: center;
+    /* align-items: center; */
+    /* max-width: 100%; */
   }
 
   .featureTitle {
@@ -197,6 +210,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 50px;
+    min-width: 100%;
   }
 
   .featureIcon {
@@ -215,7 +229,10 @@ nav {
     background-color: aliceblue;
     position: relative;
     clip-path: polygon(75% 0%, 100% 50%, 94% 93%, 0% 100%, 0 51%, 0% 0%);
+    max-width: 100%;
   }
+
+
 
 .payment {
   width: 500px;
@@ -350,6 +367,7 @@ label {
     padding: 50px;
     display: flex;
     background: rgb(235, 242, 243);
+    max-width: 100%;
   }
   
   .galleryItem {
@@ -363,6 +381,7 @@ label {
 
   .specialOffters{
     display: flex;
+    max-width: 100%;
   }
 
   .soItems {
@@ -430,7 +449,7 @@ label {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    max-width: 100%;
     background: rgba(133, 203, 230, 0.763); 
     min-height: 100px;
     flex-direction: column;
