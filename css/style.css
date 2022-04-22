@@ -1,11 +1,10 @@
 html {
-  /* scroll-behavior: smooth; */
+  scroll-behavior: smooth;
 }
 
 body {
     font-family: 'Roboto Mono', monospace;
     margin: 0 auto;
-    max-width: 100%;
     display: flex;
     flex-flow: column wrap;
 }
@@ -15,9 +14,7 @@ nav {
     color: #fff;
     padding: 20px 50px;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    max-width: 100%;
+    flex-flow: column wrap;
 }
 
 .navTop {
@@ -26,7 +23,7 @@ nav {
     justify-content: space-between;
 }
 
-.seach {
+.search {
     display: flex;
     align-items: center;
     background-color: #C1B8CE;
@@ -70,6 +67,7 @@ nav {
     transition: 0.5s;
   }
 
+
   .menuItem:hover {
     color: #896092;
     border: #16121C;
@@ -86,7 +84,7 @@ nav {
   .slider {
     background: url("https://c4.wallpaperflare.com/wallpaper/410/77/199/5bd0bdc12d414-wallpaper-preview.jpg");
     background-size: 100% 100%;
-    /* clip-path: polygon(31% 0, 100% 0, 100% 60%, 100% 100%, 25% 100%, 0% 60%, 0 0); */
+    clip-path: polygon(31% 0, 100% 0, 100% 60%, 100% 100%, 25% 100%, 0% 60%, 0 0);
     overflow: hidden;
     max-width: 100%;
     display: flex;
@@ -117,7 +115,7 @@ nav {
   }
 
   .sliderImage {
-    /* z-index: 1; */
+    z-index: 1;
   }
 
   .sliderTitle {
@@ -195,8 +193,7 @@ nav {
     display: flex;
     flex-flow: column wrap;
     text-align: center;
-    /* align-items: center; */
-    /* max-width: 100%; */
+    align-items: center;
   }
 
   .featureTitle {
@@ -207,10 +204,10 @@ nav {
 
   .features {
     display: flex;
+    flex-flow: row wrap;
     align-items: center;
     justify-content: space-between;
     padding: 50px;
-    min-width: 100%;
   }
 
   .featureIcon {
@@ -219,7 +216,6 @@ nav {
   }
 
   .featureDescrition {
-    width: 50px;
     height: 100px;
     color:#927E80;
   }
@@ -229,7 +225,8 @@ nav {
     background-color: aliceblue;
     position: relative;
     clip-path: polygon(75% 0%, 100% 50%, 94% 93%, 0% 100%, 0 51%, 0% 0%);
-    max-width: 100%;
+    display: flex;
+    flex-flow: row wrap;
   }
 
 
@@ -366,8 +363,8 @@ label {
   .gallery {
     padding: 50px;
     display: flex;
+    flex-flow: row wrap;
     background: rgb(235, 242, 243);
-    max-width: 100%;
   }
   
   .galleryItem {
@@ -447,12 +444,11 @@ label {
     position: relative;
     padding: 20px 50px;
     display: flex;
+    flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    max-width: 100%;
-    background: rgba(133, 203, 230, 0.763); 
-    min-height: 100px;
-    flex-direction: column;
+    background: #D6D0F5; 
+    min-height: auto;
   }
   footer .social_icon, footer .menu {
     display: flex;
@@ -470,7 +466,7 @@ label {
   footer .social_icon li a {
     display: inline-block;
     font-size: 2em;
-    color: #fff;
+    color: black;
     margin: 0 10px;
     transition: 0.5s;
   }
@@ -483,7 +479,7 @@ label {
     display: inline-block;
     font-size: 1.2em;
     text-decoration: none;
-    color: #fff;
+    color: black;
     margin: 0 10px;
     opacity: 0.75;
   }
@@ -493,7 +489,7 @@ label {
   }
 
   footer p {
-    color: #fff;
+    color: black;
     text-align: center;
     margin-top: 15px;
     margin-bottom: 10px;
