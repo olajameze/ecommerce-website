@@ -2,6 +2,15 @@ html {
   scroll-behavior: smooth;
 }
 
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+}
+
+@-ms-viewport {
+  width: device-width ;
+}
+
 body {
     font-family: 'Roboto Mono', monospace;
     margin: 0 auto;
