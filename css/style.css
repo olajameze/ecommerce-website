@@ -136,7 +136,7 @@ nav {
     position: absolute;
     top: 10%;
     right: 10%;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 900;
     text-align: center;
     color: #fff;
@@ -148,7 +148,7 @@ nav {
     top: 10%;
     left: 10%;
     border: 1px solid gray;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 250;
     text-align: center;
     color: #fff;
