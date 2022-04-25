@@ -10,6 +10,11 @@ html {
 @-ms-viewport {
   width: device-width ;
 }
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  #somethingorother {
+    width: 320px ;
+  }
+}
 
 body {
     font-family: 'Roboto Mono', monospace;
@@ -233,7 +238,6 @@ nav {
     height: 100vh;
     background-color: aliceblue;
     position: relative;
-    clip-path: polygon(75% 0%, 100% 50%, 94% 93%, 0% 100%, 0 51%, 0% 0%);
     display: flex;
     flex-flow: row wrap;
   }
